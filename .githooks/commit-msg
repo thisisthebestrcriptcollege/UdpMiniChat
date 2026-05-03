@@ -1,0 +1,5 @@
+#!/bin/sh
+MSG_FILE="$1"
+test -f "$MSG_FILE" || exit 0
+tmp="${MSG_FILE}.strip"
+sed '/^Co-authored-by:[[:space:]].*[Cc]ursor/d' "$MSG_FILE" >"$tmp" && mv "$tmp" "$MSG_FILE"
