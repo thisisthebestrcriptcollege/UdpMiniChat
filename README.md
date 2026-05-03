@@ -10,3 +10,5 @@ UdpMiniChat.exe queny
 ```
 
 Alex слушает порт 7001, Queny — 7002. Пустая строка — выход.
+
+Изменение с GitHub
